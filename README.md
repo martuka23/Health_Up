@@ -5,13 +5,11 @@
 ![Login](img/login.png)
 
 
-
 -- Presentación de la aplicación en el primer inicio de sesión --
 
 ![presentacion](img/presentacion1.png)
 
 ![presentacion](img/presentacion2.png)
-
 
 
 -- Prototipo en figma --
