@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender_t"
+        style="@style/titles"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="@id/guide1"
+        app:layout_constraintEnd_toEndOf="@id/guide2"
+        >
+
+
+    </TextView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/button_male"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/title_g"
+        app:layout_constraintStart_toStartOf="@id/guide1"
+        app:layout_constraintEnd_toEndOf="@id/guide2"
+        android:layout_marginTop="150dp"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/button_female"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/button1"
+        app:layout_constraintStart_toStartOf="@id/guide1"
+        app:layout_constraintEnd_toEndOf="@id/guide2"
+        android:layout_marginTop="100dp"
+        />
+
+    <!--        android:onClick="openMain"-->
+
+
+
+
+    <!--  style="@style/buttonoutlined"
+          android:onClick="openSignup"-->
+
+    <!--Glide-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
