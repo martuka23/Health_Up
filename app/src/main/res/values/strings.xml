@@ -12,7 +12,7 @@
         <string name="onboardong_finish">FINISH</string>
 
 <!--    BOTONES    -->
-        <string name="button">NEXT</string>
+        <string name="next">NEXT</string>
 
 <!--    GENDER     -->
 
@@ -20,7 +20,10 @@
         <string name="male">Male</string>
         <string name="female">Female</string>
 
-<!--    T    -->
+<!--    AGE    -->
+
+        <string name="age_t">What is your name</string>
+        <string name="name">Name</string>
 
 
 

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black2"
-    tools:context=".MainActivity">
+    tools:context=".Gender"
+    android:theme="@style/Theme.HealthUp">
 
     <TextView
         android:id="@+id/title_g"
@@ -16,33 +17,48 @@
         tools:ignore="MissingConstraints"
         app:layout_constraintStart_toStartOf="@id/guide1"
         app:layout_constraintEnd_toEndOf="@id/guide2"
-        >
-
-
+        app:layout_constraintTop_toBottomOf="@id/guide3"
+        android:layout_marginTop="120dp">
     </TextView>
 
     <Button
         android:id="@+id/button1"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        style="@style/button_male"
-        tools:ignore="MissingConstraints"
+        android:layout_height="70dp"
+        android:layout_width="140dp"
+        style="@style/button_gender"
         app:layout_constraintTop_toBottomOf="@id/title_g"
         app:layout_constraintStart_toStartOf="@id/guide1"
         app:layout_constraintEnd_toEndOf="@id/guide2"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="80dp"
+        android:textAllCaps="false"
+        android:text="@string/male"
+        android:onClick="abrirlogin"
         />
 
     <Button
         android:id="@+id/button2"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        style="@style/button_female"
-        tools:ignore="MissingConstraints"
+        android:layout_height="70dp"
+        android:layout_width="140dp"
+        style="@style/button_gender"
         app:layout_constraintTop_toBottomOf="@id/button1"
         app:layout_constraintStart_toStartOf="@id/guide1"
         app:layout_constraintEnd_toEndOf="@id/guide2"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:text="@string/female"
+        android:onClick="abrirlogin"
+        />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_height="80dp"
+        android:layout_width="160dp"
+        style="@style/button_gender"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintStart_toStartOf="@id/guide1"
+        app:layout_constraintEnd_toEndOf="@id/guide2"
         android:layout_marginTop="100dp"
+        android:text="@string/next"
         />
 
     <!--        android:onClick="openMain"-->
@@ -68,5 +84,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
